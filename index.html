@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownies da Kivia | Doceria Artesanal</title>
+    <meta name="description" content="Brownies artesanais feitos com amor pela Kivia. Sabores incríveis, combos promocionais e rifa especial!">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 🌸 Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="brownie-spin"></div>
+            <p>Preparando doçuras...</p>
+        </div>
+    </div>
+
+    <!-- 🌙 Botão Modo Escuro -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- ✨ Botão Voltar ao Topo -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 🎀 Cabeçalho Minimalista -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="logo-kivia.png" alt="Brownies da Kivia" class="logo-img">
+                </a>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Início</a></li>
+                        <li><a href="#sabores" class="nav-link">Sabores</a></li>
+                        <li><a href="#precos" class="nav-link">Preços</a></li>
+                        <li><a href="#rifa" class="nav-link">Rifa</a></li>
+                        <li><a href="#contato" class="nav-link">Encomendar</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🍫 Seção Hero -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Brownies da <span>Kivia</span></h1>
+                    <p class="hero-subtitle">Artesanal, caseiro e feito com muito carinho!</p>
+                    <p class="hero-description">Deliciosos brownies com receita exclusiva, perfeitos para presentear ou para seu momento doce.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#sabores" class="btn btn-pink pulse">Ver Sabores</a>
+                        <a href="#rifa" class="btn btn-outline">Participar da Rifa</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="brownie-hero.png" alt="Brownies deliciosos" class="floating slower">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🍰 Seção Sabores -->
+    <section id="sabores" class="flavors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span>Sabores</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Escolha seu favorito ou experimente todos!</p>
+            </div>
+            
+            <div class="flavors-grid">
+                <!-- Brigadeiro -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="flavor-img">
+                        <img src="brownie-brigadeiro.png" alt="Brownie de Brigadeiro">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Brigadeiro</h3>
+                        <p>O clássico brasileiro com granulado e muito brigadeiro cremoso.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-candy-cane"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paçoca -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="flavor-img">
+                        <img src="brownie-pacoca.png" alt="Brownie de Paçoca">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Paçoca</h3>
+                        <p>Crocante paçoca com um toque de canela, uma combinação perfeita!</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-peanut"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caramelo -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="flavor-img">
+                        <img src="brownie-caramelo.png" alt="Brownie de Caramelo">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Caramelo</h3>
+                        <p>Caramelo dourado com flor de sal para um contraste incrível.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Casadinho -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="flavor-img">
+                        <img src="brownie-casadinho.png" alt="Brownie Casadinho">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Casadinho</h3>
+                        <p>Dois amores: chocolate branco e chocolate ao leite.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ninho com Nutella -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="flavor-img">
+                        <img src="brownie-ninho.png" alt="Brownie Ninho com Nutella">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Ninho com Nutella</h3>
+                        <p>Exclusivo! Creme de leite ninho e generosas camadas de Nutella.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Especiais -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="flavor-img">
+                        <img src="brownie-especiais.png" alt="Brownies Especiais">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Especiais</h3>
+                        <p>Sabores sazonais e criações exclusivas - consulte disponibilidade.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💰 Seção Preços -->
+    <section id="precos" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preços & <span>Promoções</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Doçura que cabe no seu bolso</p>
+            </div>
+            
+            <div class="pricing-tables">
+                <!-- Unitários -->
+                <div class="pricing-table wow fadeInLeft">
+                    <div class="pricing-header">
+                        <h3>Unitários</h3>
+                        <div class="price-icon">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li>
+                            <span class="size">Mini (5x5 cm)</span>
+                            <span class="price">R$ 5,00</span>
+                        </li>
+                        <li>
+                            <span class="size">Tradicional (7x7 cm)</span>
+                            <span class="price">R$ 12,00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Combos -->
+                <div class="pricing-table featured wow fadeInUp">
+                    <div class="pricing-header">
+                        <h3>Combos</h3>
+                        <div class="ribbon">Economize</div>
+                        <div class="price-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li>
+                            <span class="combo">2 minis</span>
+                            <span class="price">R$ 9,00</span>
+                            <span class="save">(o 2º por R$ 4,00)</span>
+                        </li>
+                        <li>
+                            <span class="combo">2 tradicionais</span>
+                            <span class="price">R$ 22,00</span>
+                            <span class="save">(o 2º por R$ 10,00)</span>
+                        </li>
+                        <li>
+                            <span class="combo">1 mini + 1 tradicional</span>
+                            <span class="price">R$ 15,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎁 Seção Rifa -->
+    <section id="rifa" class="raffle-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Rifa <span>Especial</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Participe e concorra a prêmios deliciosos!</p>
+            </div>
+            
+            <div class="raffle-content">
+                <div class="raffle-image wow fadeInLeft">
+                    <img src="raffle-prize.png" alt="Prêmios da Rifa">
+                    <div class="confetti"></div>
+                </div>
+                
+                <div class="raffle-info wow fadeInRight">
+                    <h3>100 números disponíveis</h3>
+                    <p>Bilhete: <strong>R$ 5,00</strong></p>
+                    
+                    <ul class="raffle-details">
+                        <li>
+                            <i class="fas fa-trophy"></i>
+                            <span>1º Prêmio: <strong>Caixa com 9 brownies tradicionais</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-medal"></i>
+                            <span>2º Prêmio: <strong>Cupom de 15% de desconto</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-award"></i>
+                            <span>3º Prêmio: <strong>Pix de R$ 50,00</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Sorteio quando 60 números forem vendidos</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="raffle-cta">
+                        <a href="https://linkdearifa.com" class="btn btn-pink pulse">Comprar Bilhete</a>
+                        <div class="qr-code">
+                            <img src="qr-rifa.png" alt="QR Code para a rifa">
+                            <p>Escaneie para participar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📱 Seção Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como <span>Encomendar</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Fale diretamente comigo!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info wow fadeInLeft">
+                    <h3>Me chame no WhatsApp ou Instagram</h3>
+                    <p>Estou disponível para tirar dúvidas, aceitar encomendas e conversar sobre seus pedidos especiais!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5579999408131" class="contact-method whatsapp">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <span>WhatsApp</span>
+                                <strong>(79) 99940-8131</strong>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/kivia" class="contact-method instagram">
+                            <div class="method-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-info">
+                                <span>Instagram</span>
+                                <strong>@kivia</strong>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h4>Formas de pagamento:</h4>
+                        <div class="payment-icons">
+                            <i class="fab fa-pix" title="Pix"></i>
+                            <i class="fas fa-money-bill-wave" title="Dinheiro"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-image wow fadeInRight">
+                    <img src="contact-image.png" alt="Kivia atendendo">
+                    <div class="contact-decor"></div>
+                    <div class="qr-code-container">
+                        <img src="qr-pix.png" alt="QR Code PIX">
+                        <p>Pagamento via PIX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🍫 Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo-kivia-small.png" alt="Brownies da Kivia" class="footer-logo-img">
+                    <p>Brownies artesanais feitos com amor</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sabores">Sabores</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                        <li><a href="#rifa">Rifa</a></li>
+                        <li><a href="#contato">Encomendar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Aracaju, SE</li>
+                        <li><i class="fas fa-clock"></i> Encomendas com antecedência</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Brownies da Kivia. Todos os direitos reservados.</p>
+                <p class="credits">Feito com <i class="fas fa-heart"></i> por Kivia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Inicializa animações WOW -->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
