@@ -1203,6 +1203,8 @@ body.dark-mode .raffle-section {
     opacity: 0.1;
     pointer-events: none;
     animation: confetti 10s linear infinite;
+    border-radius: 15px; /* Igual ao container */
+    z-index: 1;
 }
 
 @keyframes confetti {
