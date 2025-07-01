@@ -2151,4 +2151,174 @@ body.dark-mode .dark-mode-toggle .fa-sun {
         bottom: 90px;
         left: 20px;
     }
+
+    /* Adicione estas regras no final do arquivo CSS */
+
+/* Ajustes específicos para mobile */
+@media (max-width: 480px) {
+    /* Ajustes no cabeçalho */
+    .header-content {
+        padding: 15px 0;
+    }
+    
+    .logo-img {
+        height: 50px;
+    }
+    
+    /* Ajustes na seção hero */
+    .hero-section {
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    /* Ajustes nas seções */
+    section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Ajustes nos cards de sabores */
+    .flavors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustes nas tabelas de preço */
+    .pricing-tables {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustes na seção de rifa */
+    .raffle-details li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    /* Ajustes nos botões */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Ajustes no rodapé */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-links, .footer-contact {
+        text-align: center;
+    }
+    
+    .footer-links h4::after, 
+    .footer-contact h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* Ajustes na galeria */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Ajustes nos botões flutuantes */
+    .back-to-top, .dark-mode-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .dark-mode-toggle {
+        bottom: 90px;
+        left: 15px;
+    }
+    
+    /* Ajustes no menu mobile */
+    .nav-menu ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .nav-menu li {
+        margin: 10px 0;
+    }
+    
+    /* Ajustes na seção sobre */
+    .about-img-decor {
+        display: none;
+    }
+    
+    /* Ajustes no QR code */
+    .qr-code-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Ajustes no contador */
+    .counter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .counter-item {
+        min-width: 70px;
+        margin: 5px;
+    }
+}
+
+/* Correção para o menu mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    body.dark-mode .nav-menu {
+        background-color: var(--white);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+    }
 }
