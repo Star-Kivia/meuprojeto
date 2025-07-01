@@ -1,10 +1,735 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Título da página</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    manutenção.
-  </body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownies da Kivia | Doceria Artesanal</title>
+    <meta name="description"
+        content="Brownies caseiros feitos com amor pela Kivia. Sabores incríveis, combos promocionais e rifa especial!">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagens/icons8-estrelas-48.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Preloader - Tela de carregamento -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="brownie-spin"></div>
+            <p>Carregando doçuras...</p>
+        </div>
+    </div>
+
+    <!-- Botão de Voltar ao Topo -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Botão Modo Escuro -->
+    <button class="dark-mode-toggle" aria-label="Alternar modo escuro">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo com efeito flutuante -->
+                <a href="#" class="logo floating">
+                    <img src="imagens/verso.png" alt="Brownies da Kivia" class="logo-img">
+                </a>
+
+                <!-- Menu de navegação -->
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#sabores" class="nav-link">Sabores</a></li>
+                        <li><a href="#precos" class="nav-link">Preços</a></li>
+                        <li><a href="#promocoes" class="nav-link">Promoções</a></li>
+                        <li><a href="#rifa" class="nav-link">Rifa</a></li>
+                        <li><a href="#encomendas" class="nav-link">Encomendas</a></li>
+                        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Menu mobile -->
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero - Apresentação -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Brownies da <span>Kivia</span></h1>
+                    <p class="hero-subtitle">Caseiros, feitos com <span class="heart-beat">❤️</span> amor</p>
+                    <p class="hero-description">Deliciosos brownies artesanais, perfeitos para adoçar seu dia! Cada
+                        pedaço é uma experiência única de sabor e textura.</p>
+
+                    <!-- Botões com efeito -->
+                    <div class="hero-buttons">
+                        <a href="#sabores" class="btn btn-pink pulse">Ver Sabores</a>
+                        <a href="#promocoes" class="btn btn-outline">Combos Especiais</a>
+                    </div>
+                </div>
+
+                <!-- Imagem hero com efeito flutuante -->
+                <div class="hero-image">
+                    <img src="imagens/brow.png" alt="Brownies deliciosos" class="floating slower">
+                </div>
+            </div>
+        </div>
+
+        <!-- Elementos decorativos -->
+        <div class="decorative-hearts"></div>
+        <div class="decorative-stars"></div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a <span>Kivia</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Conheça a autônoma por trás dessas maravilhas</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Imagem da Kivia ou dos brownies -->
+                    <img src="imagens/kiwieee.jpg" alt="Kivia - Doceira" class="about-img">
+                    <div class="about-img-decor"></div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Minha jornada doce</h3>
+                    <p>Oiee! Eu sou a Kivia, uma estudante de TI que encontrou nos brownies uma forma
+                        de ter um lucro extra para investir nos meus estudos. Cada receita é testada e aperfeiçoada com
+                        carinho para trazer o máximo de sabor e felicidade.</p>
+                    <p>Meus brownies são produzidos com muita qualidade, carinho, amor e afeto. Acredito que todo mundo
+                        que prova se apaixona, porque são feitos com dedicação e ingredientes selecionados. Este site
+                        foi 100% desenvolvido por mim como parte do meu aprendizado em desenvolvimento de sistemas.</p>
+
+                    <!-- Lista de qualidades -->
+                    <ul class="qualities-list">
+                        <li class="wow fadeInUp" data-wow-delay="0.1s">
+                            <i class="fas fa-heart"></i>
+                            <span>Feitos com amor</span>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.2s">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingredientes selecionados</span>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.3s">
+                            <i class="fas fa-star"></i>
+                            <span>Receita adaptada</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sabores -->
+    <section id="sabores" class="flavors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span>Sabores</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Escolha seu favorito ou experimente todos!</p>
+            </div>
+
+            <div class="flavors-grid">
+                <!-- Card de Sabor 1 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="flavor-img">
+                        <img src="imagens/caramello.jpg" alt="Brownie de Caramello">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Caramello</h3>
+                        <p>Um sabor irresistível, que mistura o doce profundo do açúcar com uma pitada de sal
+                            inesquecível.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Sabor 2 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="flavor-img">
+                        <img src="imagens/brigadeiro.jpg" alt="Brownie de Brigadeiro">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Brigadeiro</h3>
+                        <p>Um clássico favorito: a sensação é de comer vários brigadeiros caseiros dentro do seu
+                            brownie.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Sabor 3 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="flavor-img">
+                        <img src="imagens/coco.jpg" alt="Brownie de Coco">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Prestígio</h3>
+                        <p>Leve, doce e com uma textura mágica de coco fresco que derrete na boca.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Sabor 4 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="flavor-img">
+                        <img src="imagens/pacoca.jpg" alt="Brownie de Paçoca">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Paçoca</h3>
+                        <p>Queridinha de muitos!! Perfeito pra quem prefere o equilíbrio, com o toque ideal entre
+                            amendoim e chocolate.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Sabor 5 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="flavor-img">
+                        <img src="imagens/casado.jpg" alt="Brownie Casadinho">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Casadinho</h3>
+                        <p>Dois amores em um só brownie: chocolate branco e chocolate meio amargo.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Sabor 6 -->
+                <div class="flavor-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="flavor-img">
+                        <img src="imagens/oreo.jpg" alt="Brownie Oreo">
+                        <div class="flavor-overlay"></div>
+                    </div>
+                    <div class="flavor-content">
+                        <h3>Oreo</h3>
+                        <p>A opção mais doce do cardápio, feita pra quem ama e não resiste a um biscoito oreo.</p>
+                        <div class="flavor-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flavor-note">
+                <p><strong>Observação:</strong> Estes não são os únicos sabores que produzimos, mas são os que estão
+                    disponíveis no momento. Também fazemos outros sabores como Ninho, meio amargo e até sabores mais
+                    cítricos como maracujá. Já experimentou um brownie com recheio de maracujá? Vem encomendar o seu!
+                </p>
+            </div>
+        </div>
+
+        <!-- Efeitos decorativos -->
+        <div class="floating-chocolates"></div>
+    </section>
+
+    <!-- Seção Preços -->
+    <section id="precos" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos <span>Preços</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Doçura que cabe no seu bolso</p>
+            </div>
+
+            <div class="pricing-tables">
+                <!-- Tabela de Preços Unitários -->
+                <div class="pricing-table wow fadeInLeft">
+                    <div class="pricing-header">
+                        <h3>Unitários</h3>
+                        <div class="price-icon">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>
+                            <span class="size">Mini (5x5 cm)</span>
+                            <span class="price">R$ 6,00</span>
+                        </li>
+                        <li>
+                            <span class="size">Tradicional (7x7 cm)</span>
+                            <span class="price">R$ 12,00</span>
+                        </li>
+                    </ul>
+
+                    <div class="pricing-footer">
+                        <p>Perfeito para experimentar!</p>
+                    </div>
+                </div>
+
+                <!-- Tabela de Combos -->
+                <div class="pricing-table featured wow fadeInUp">
+                    <div class="pricing-header">
+                        <h3>Combos</h3>
+                        <div class="ribbon">Economize</div>
+                        <div class="price-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li>
+                            <span class="combo">2 minis</span>
+                            <span class="price">R$ 10,00</span>
+                            <span class="save">(Economize R$ 2,00)</span>
+                        </li>
+                        <li>
+                            <span class="combo">2 tradicionais</span>
+                            <span class="price">R$ 22,00</span>
+                            <span class="save">(Economize R$ 2,00)</span>
+                        </li>
+                    </ul>
+
+                    <div class="pricing-footer">
+                        <p>Mais doçura, menos gasto!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-info">
+                <h3>Formas de Pagamento</h3>
+                <div class="payment-content">
+                    <div class="qr-code-container">
+                        <img src="imagens/WhatsApp Image 2025-06-30 at 10.47.19.jpeg" alt="QR Code PIX"
+                            class="qr-code-img">
+                        <p>Pague com PIX</p>
+                    </div>
+                    <div class="pix-key">
+                        <p><strong>Chave PIX (CPF):</strong> 118.701.125-80</p>
+                        <p><strong>Titular:</strong> Kivia Maria Alves Santos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Promoções -->
+    <section id="promocoes" class="promo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Promoções <span>Especiais</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Aproveite nossas ofertas por tempo limitado</p>
+            </div>
+
+            <div class="promo-cards">
+                <!-- Promoção 1 -->
+                <div class="promo-card wow fadeIn" data-wow-delay="0.1s">
+                    <div class="promo-badge">Rifa</div>
+                    <div class="promo-content">
+                        <h3>Combo de Bilhetes</h3>
+                        <p>Leve 2 bilhetes da rifa por apenas:</p>
+
+                        <div class="promo-price">
+                            <span class="old-price">R$ 10,00</span>
+                            <span class="new-price">R$ 8,00</span>
+                        </div>
+                        <p>Ajude-me a crescer e não perca a chance de vencer !!</p>
+                        <div class="promo-image">
+                            <img src="imagens/QRCode_Fácil (1).jpg" alt="Combo Rifa">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Promoção Brownie -->
+                <div class="promo-card wow fadeIn" data-wow-delay="0.3s">
+                    <div class="promo-badge">Oferta</div>
+                    <div class="promo-content">
+                        <h3>Combo Brownie</h3>
+                        <p>1 tradicional + 1 mini por apenas:</p>
+                        <div class="promo-price">
+                            <span class="old-price">R$ 18,00</span>
+                            <span class="new-price">R$ 16,00</span>
+                        </div>
+                        <p>Vamos gatinha(o) se presenteie, eu sei que você está desejando !!</p>
+                        <div class="promo-image">
+                            <img src="imagens/WhatsApp Image 2025-06-30 at 10.47.19.jpeg" alt="Promoção Brownie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contador de Oferta -->
+            <div class="offer-counter wow fadeIn">
+                <p>Essas ofertas terminam em:</p>
+                <div class="counter">
+                    <div class="counter-item">
+                        <span id="days">00</span>
+                        <p>Dias</p>
+                    </div>
+                    <div class="counter-item">
+                        <span id="hours">00</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="counter-item">
+                        <span id="minutes">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="counter-item">
+                        <span id="seconds">00</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Rifa -->
+    <section id="rifa" class="raffle-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Participe da <span>Rifa</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">E concorra a prêmios incríveis</p>
+            </div>
+
+            <div class="raffle-content">
+                <div class="raffle-image wow fadeInLeft">
+                    <img src="imagens/Captura de tela 2025-06-30 201103.png" alt="Prêmios da Rifa">
+                    <div class="confetti"></div>
+                </div>
+
+                <div class="raffle-info wow fadeInRight">
+                    <h3>Rifa Especial da Kivia</h3>
+                    <p>Participe da nossa rifa e concorra a prêmios deliciosos!</p>
+
+                    <ul class="raffle-details">
+                        <li>
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Valor por bilhete: <strong>R$ 5,00</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-trophy"></i>
+                            <span>1º Prêmio: <strong>Um kit de brownies, 6 do tamanho tradicional e 4
+                                    mines.</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-medal"></i>
+                            <span>2º Prêmio: <strong>Pix de R$ 50,00</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Sorteio: <strong>Quanso todos os bilhetes estiverem preenchidos.</strong></span>
+                        </li>
+                    </ul>
+
+                    <div class="raffle-cta">
+                        <a href="https://wa.me/5579999408131?text=Desejo comprar um bilhete."
+                            class="btn btn-pink pulse">Compre seu Bilhete</a>
+                        <div class="qr-code">
+                            <p>Escaneie na aba "promoções" e mantenha o link salvo para acompanhar o resultado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Encomendas -->
+    <section id="encomendas" class="orders-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Informações de <span>Encomendas</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Faça sua encomenda com antecedência</p>
+            </div>
+
+            <div class="orders-content">
+                <div class="orders-info wow fadeInLeft">
+                    <h3>Formas e Quantidades</h3>
+
+                    <ul class="orders-list">
+                        <li>
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <strong>Formato Tradicional</strong>
+                                <p>Rende 8 brownies no tamanho tradicional (7x7 cm)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-cookie"></i>
+                            <div>
+                                <strong>Formato Mini</strong>
+                                <p>Rende 16 brownies no tamanho mini (5x5 cm)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-industry"></i>
+                            <div>
+                                <strong>Formato Industrial</strong>
+                                <p>Rende 12 brownies em formato mais alto e espesso (textura diferente mas mesmo sabor)
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="orders-payment">
+                        <h4>Condições de Pagamento:</h4>
+                        <p>Para encomendas, cobramos 50% de entrada no ato do pedido, especialmente para encomendas
+                            grandes.</p>
+                        <p>O limite para encomendar varia conforme a data de entrega e pode ser parcelado (ex: encomenda
+                            de 300 unidades pode ser entregue em lotes de 50 por semana).</p>
+                        <p><strong>Quanto maior a quantidade, melhor o preço!</strong> Valores são sempre negociáveis
+                            conforme a encomenda.</p>
+                        <p>Também fazemos encomendas personalizadas de acordo com sua proposta e necessidades.</p>
+                    </div>
+                </div>
+
+                <div class="orders-precautions wow fadeInRight">
+                    <h3>Precauções e Conservação</h3>
+
+                    <div class="precaution-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Validade</strong>
+                            <p>Brownie lacrado dura cerca de 1 semana (contando do dia de fabricação). Se armazenado na
+                                geladeira, pode durar até 2 semanas.</p>
+                        </div>
+                    </div>
+
+                    <div class="precaution-item">
+                        <i class="fas fa-box-open"></i>
+                        <div>
+                            <strong>Após aberto</strong>
+                            <p>Dura no máximo 3 dias fora da geladeira (dependendo da vasilha). Para maior duração,
+                                armazene na geladeira mesmo após aberto.</p>
+                        </div>
+                    </div>
+
+                    <div class="precaution-item">
+                        <i class="fas fa-temperature-low"></i>
+                        <div>
+                            <strong>Armazenamento</strong>
+                            <p>Evite grandes variações de temperatura, pois isso acelera o processo de deterioração do
+                                produto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa <span>Galeria</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Alguns dos nossos trabalhos</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.1s">
+                    <img src="imagens/asteki.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
+                    <img src="imagens/desenhos.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="imagens/massa.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
+                    <img src="imagens/brownies.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
+                    <img src="imagens/massacrua.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="imagens/mines.jpg" alt="Brownies da Kivia">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fale <span>Comigo</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Estou ansiosa para te atender!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info wow fadeInLeft">
+                    <h3>Gostou da experiência?</h3>
+                    <p>Me chama pra gente conversar sobre encomendas, dúvidas ou só pra bater um papo sobre brownies!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5579999408131" class="contact-method whatsapp">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <span>WhatsApp</span>
+                                <strong>(79) 99940-8131</strong>
+                            </div>
+                        </a>
+
+                        <a href="https://instagram.com/brownies_da_kivia" class="contact-method instagram">
+                            <div class="method-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-info">
+                                <span>Instagram</span>
+                                <strong>@brownies_da_kivia</strong>
+                            </div>
+                        </a>
+
+                        <a href="mailto:kiviamariaykm@gmail.com" class="contact-method email">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <span>Email</span>
+                                <strong>kiviamariaykm@gmail.com</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4>Horário de Atendimento:</h4>
+                        <p>Personalizado e variável conforme as encomendas</p>
+                    </div>
+                </div>
+
+                <div class="contact-image wow fadeInRight">
+                    <img src="imagens/kivi.png" alt="Kivia atendendo">
+                    <div class="contact-decor"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>Brownies caseiros feitos com amor</p>
+
+                    <div class="footer-social">
+                        <a href="https://instagram.com/brownies_da_kivia" class="social-icon"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5579999408131" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sabores">Sabores</a></li>
+                        <li><a href="#precos">Preços</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#rifa">Rifa</a></li>
+                        <li><a href="#encomendas">Encomendas</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> (79) 99940-8131</li>
+                        <li><i class="fas fa-envelope"></i> kiviamariaykm@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Aracaju, SE</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Site desenvolvido com carinho por Kivia M. A. Santos</p>
+                <p class="credits">© 2025 Brownies da Kivia. Todos os direitos reservados.
+                    <span>@brownies_da_kivia</span></p>
+            </div>
+        </div>
+
+        <!-- Elementos decorativos do rodapé -->
+        <div class="footer-hearts"></div>
+        <div class="footer-stars"></div>
+    </footer>
+
+    <!-- Lightbox para a galeria -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Inicializa animações WOW -->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>
