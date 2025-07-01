@@ -256,4 +256,50 @@ $(document).ready(function() {
         if (e.target !== this) return;
         $('.lightbox').fadeOut();
     });
+
+    // Adicione isto no documento ready, após as outras funções
+
+// Ajuste para fechar o menu ao clicar fora
+$(document).click(function(e) {
+    if (!$(e.target).closest('.menu-toggle, .nav-menu').length && $('.nav-menu').hasClass('active')) {
+        $('.menu-toggle').removeClass('active');
+        $('.nav-menu').removeClass('active');
+    }
+});
+
+// Correção para o header em mobile
+$(window).scroll(function() {
+    var scrollPosition = $(window).scrollTop();
+    
+    // Mostra/oculta header em qualquer posição no mobile
+    if ($(window).width() < 768) {
+        if (scrollPosition > 50) {
+            $('.header').addClass('visible').addClass('scrolled');
+        } else {
+            $('.header').removeClass('scrolled');
+        }
+    } else {
+        // Comportamento original para desktop
+        var flavorsSection = $('#sabores').offset().top;
+        if (scrollPosition >= flavorsSection - 100) {
+            $('.header').addClass('visible');
+        } else {
+            $('.header').removeClass('visible');
+        }
+    }
+}).scroll();
+
+// Redimensiona imagens para caber em telas pequenas
+function resizeImagesForMobile() {
+    if ($(window).width() < 768) {
+        $('.hero-image img, .about-img, .raffle-image img, .contact-image img').each(function() {
+            var maxWidth = $(window).width() - 40;
+            $(this).css('max-width', maxWidth + 'px');
+        });
+    } else {
+        $('.hero-image img, .about-img, .raffle-image img, .contact-image img').css('max-width', '');
+    }
+}
+
+$(window).on('load resize', resizeImagesForMobile);
 });
