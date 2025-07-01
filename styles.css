@@ -2284,8 +2284,14 @@ body.dark-mode .dark-mode-toggle .fa-sun {
     }
 }
 
-/* Correção para o menu mobile */
+/* Seu CSS original completo permanece aqui */
+
+/* ========================================= */
+/* CORREÇÕES ESPECÍFICAS PARA MOBILE */
+/* ========================================= */
+
 @media (max-width: 768px) {
+    /* Correção do menu mobile */
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -2293,11 +2299,10 @@ body.dark-mode .dark-mode-toggle .fa-sun {
         width: 100%;
         height: calc(100vh - 80px);
         background-color: var(--white);
-        flex-direction: column;
-        align-items: center;
-        padding-top: 30px;
-        transition: var(--transition);
-        z-index: 999;
+        transition: all 0.5s ease;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 20px 0;
     }
     
     body.dark-mode .nav-menu {
@@ -2308,17 +2313,170 @@ body.dark-mode .dark-mode-toggle .fa-sun {
         left: 0;
     }
     
-    .nav-menu ul {
+    .nav-list {
         flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
         width: 100%;
+    }
+    
+    .nav-list li {
+        width: 100%;
+        margin: 0;
         text-align: center;
     }
     
-    .nav-menu li {
-        margin: 15px 0;
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
     }
     
-    .nav-link {
+    body.dark-mode .nav-link {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Correção da seção hero */
+    .hero-section {
+        padding-top: 80px;
+        min-height: auto;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .hero-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .hero-image img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .hero-text {
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* Correção da seção rifa */
+    .raffle-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .raffle-image {
+        margin-bottom: 30px;
+    }
+    
+    .raffle-info {
+        padding: 0 15px;
+    }
+    
+    .raffle-details li {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .raffle-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Correção da seção contato */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        margin-bottom: 30px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    
+    .contact-methods {
+        align-items: center;
+    }
+    
+    .contact-method {
+        justify-content: center;
+    }
+    
+    .contact-image {
+        margin-top: 30px;
+    }
+    
+    /* Ajustes gerais */
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    /* Correção do efeito flutuante em mobile */
+    .floating {
+        animation: none;
+    }
+    
+    /* Ajuste do logo no header mobile */
+    .header.scrolled .logo-img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes mais específicos para telas pequenas */
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
         font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Correção da imagem flutuante */
+    .hero-image img {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+    
+    /* Ajuste do menu mobile */
+    .nav-menu {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+    
+    /* Ajuste dos botões flutuantes */
+    .back-to-top, .dark-mode-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .dark-mode-toggle {
+        bottom: 100px;
+        left: 15px;
     }
 }
