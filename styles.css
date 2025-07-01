@@ -2479,4 +2479,153 @@ body.dark-mode .dark-mode-toggle .fa-sun {
         bottom: 100px;
         left: 15px;
     }
+/* Seção Rifa - Estilos Gerais */
+.raffle-section {
+    position: relative;
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.raffle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.raffle-image-mobile {
+    display: none; /* Escondido no desktop */
+}
+
+.raffle-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.raffle-info h3 {
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    color: var(--pink-darker);
+    margin-bottom: 20px;
+}
+
+.raffle-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--dark);
+}
+
+.raffle-details {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.raffle-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.raffle-details i {
+    width: 30px;
+    height: 30px;
+    background-color: var(--pink-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-darker);
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+.raffle-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.raffle-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.raffle-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--medium);
+}
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+    .raffle-section {
+        padding: 60px 0;
+    }
+    
+    .raffle-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .raffle-image-mobile {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .raffle-image-mobile img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: var(--shadow-md);
+    }
+    
+    .raffle-info {
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    .raffle-details {
+        text-align: left;
+        max-width: 500px;
+        margin: 30px auto;
+    }
+    
+    .raffle-details li {
+        gap: 12px;
+    }
+    
+    .raffle-buttons {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .raffle-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .raffle-details {
+        margin: 20px 0;
+    }
+    
+    .raffle-details li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .raffle-details i {
+        margin-top: 0;
+    }
+    
+    .raffle-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
